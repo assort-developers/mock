@@ -189,10 +189,11 @@ h1 {
 .side_menu .menu_item {
 	cursor: default;
 }
-/* .side_menu .has_submenu::after{
-	content: "";
-	background-image: url('arrow_down.png');
-} */
+.side_menu .has_submenu{
+	background: url('arrow_down.png') 175px 10px no-repeat transparent;
+	background-size: 16px 16px;
+
+}
 .side_menu .menu_block_hiden .menu_block_subitem{
 	display: block;
 	margin: 0;

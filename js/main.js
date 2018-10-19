@@ -44,12 +44,14 @@ function toggle_submenu(target){
 	target.find('.menu_block_hiden').toggle();
 	var height = target.height();
 	if(height <= 40){
+		target.find('.has_submenu').css('background-image', 'url(css/arrow_up.png)');
 		var count = target.find('.menu_block_hiden .menu_block_subitem').length * 37 + 46;
 		target.animate({
 			height: count + "px"
 		},"swing");
 		target.find('.menu_block_name').height('36px');
 	}else{
+		target.find('.has_submenu').css('background-image', 'url(css/arrow_down.png)');
 		target.animate({
 			height: "36px"
 		},  "swing");
